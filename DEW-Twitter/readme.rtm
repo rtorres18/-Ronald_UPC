@@ -1,0 +1,42 @@
+****************************	
+*Para Leer el ultimo Tweets*
+****************************
+
+rails new Dew-Twitter
+rails g scaffold tweet message:text user:string
+
+bundle install	
+rake db:migrate
+
+Modificar los archivos
+raiz
+*****
+	gemfile
+		gem 'twitter'
+config
+******
+	routes
+
+Controladora
+*************
+	tweets_controller.rb
+    
+	****ojo agregar esto en la def de index******
+		@tweet = Tweet.new
+	
+modelo
+*******
+	tweet.rb
+	
+vista
+******
+	_form.html.erb
+	index.html.erb
+	crear el archivo: read_message.html.erb
+
+**********************	
+*Para publicar Tweets*
+**********************
+
+rails g migration add_status_to_tweet status:string
+	
