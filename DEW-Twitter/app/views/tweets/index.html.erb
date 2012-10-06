@@ -10,5 +10,14 @@
   </div>
 <% end %>
 
+<%= form_for(@tweet, :url => "update") do |f| %>
+  <div class="field">
+    <%= f.label :message %><br />
+    <%= f.text_field :message %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar" %>
+  </div>
+<% end %>
 
 

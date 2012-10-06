@@ -13,4 +13,11 @@ end
   	Twitter.user_timeline(self.user).first.text
   end
   
-end
+
+
+  def update_status
+  	return "sin update" if self.message.blank?
+  	Twitter.update(self.message)
+  end
+  
+ end

@@ -39,4 +39,16 @@ vista
 **********************
 
 rails g migration add_status_to_tweet status:string
+
+DEW-Twitter/app/controllers/tweets_controller.rb
+
+DEW-Twitter/app/models/tweet.rb
+
+DEW-Twitter/app/views/tweets/index.html.erb
+
+DEW-Twitter/app/views/tweets/update_status.html.erb
+
+DEW-Twitter/config/routes.rb
+
+
 	
